@@ -1,0 +1,25 @@
+<%= render "shared/header" %>
+
+  <%# キャッチコピー %>
+<div class='main'>
+    <div class='catch-copy'>
+      <h2 class='title'>いつもの買い物にecoをプラス</h2>
+    </div>
+
+  <%# 商品一覧 %>
+    <div class='product-contents'>
+      <h2 class='title'>商品一覧</h2>
+      <ul class='product-lists'>
+
+      <%# @products.each do |product| %>
+        <!--li class='list'-->
+          <%#= link_to product_path(product.id) do %>
+          <!--div class='product-img-content'-->
+          <%#= image_tag product.image, class: "product-img" %>
+          <%# end %>
+        <!--/li-->
+      <%# end %>
+      </ul>
+    </div>
+</div>
+<%= render "shared/footer" %>
