@@ -1,27 +1,25 @@
-<%# ecoショップで買い物をするメリット部分 %>
+<%= render "shared/header" %>
+
+  <%# キャッチコピー %>
 <div class='main'>
-  <div class='eco-merit'>
-    <h2 class='title'>
-      ecoショップで買い物をすると
-    </h2>
-    <ul class='merit-lists'>
-      <li class='list'>
-        <%= image_tag "#", class:"list-pict" %>
-        <span class='merit-list-number'>1</span>
-        <h3 class='merit-list-text'>
-        <span class='merit-list-blue-text'>手軽に</span>
-        エコに貢献できる
-        </h3>
-        <p class='merit-list-description'>
-        商品を買うだけでエコに貢献できる！
-        </p>
-      </li>
-      <li class='list'>
-        <%= image_tag "#", class:"list-pict"%>
-        <span class='merit-list-number'>2</span>
-        <h3 class='merit-list-text'>
-        <span class='merit-list-blue-text'>簡単に</span>
-      </li>
-    </ul>
-  </div>
+    <div class='catch-copy'>
+      <h2 class='title'>いつもの買い物にecoをプラス</h2>
+    </div>
+
+  <%# 商品一覧 %>
+    <div class='product-contents'>
+      <h2 class='title'>商品一覧</h2>
+      <ul class='product-lists'>
+
+      <%# @products.each do |product| %>
+        <!--li class='list'-->
+          <%#= link_to product_path(product.id) do %>
+          <!--div class='product-img-content'-->
+          <%#= image_tag product.image, class: "product-img" %>
+          <%# end %>
+        <!--/li-->
+      <%# end %>
+      </ul>
+    </div>
 </div>
+<%= render "shared/footer" %>
